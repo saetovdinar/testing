@@ -5,7 +5,12 @@ body {
 .hidden {
     display: none;
 }
-
+.invalid {
+    border: 10px solid red;
+}
+.valid {
+    border: 10px solid green;
+}
 .input {
     display: inline-block;
     padding: .375rem .75rem;

@@ -2,14 +2,12 @@ body {
     color: #333;
 }
 
-.hidden {
-    display: none;
+
+#invalid {
+    border: 1px solid red ;
 }
-.invalid {
-    border: 10px solid red;
-}
-.valid {
-    border: 10px solid green;
+#valid {
+    border: 1px solid green ;
 }
 .input {
     display: inline-block;
@@ -19,8 +17,44 @@ body {
     color: #495057;
     border: 1px solid #ced4da;
     border-radius: .25rem;
+    outline: none;
 }
-
+.visa {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ac/Old_Visa_Logo.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    opacity: 0.25;
+}
+.mir {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mir_Pay_logo.png/112px-Mir_Pay_logo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    opacity: 0.25;
+}
+.mastercard {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/200px-Mastercard_2019_logo.svg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    opacity: 0.25;
+}
+.union {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/UnionPay_logo.svg/160px-UnionPay_logo.svg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    opacity: 0.25;
+}
 .btn {
     display: inline-block;
     text-align: center;
@@ -31,42 +65,13 @@ body {
     line-height: 1.5;
     border-radius: .25rem;
     border: 1px solid #ced4da;
+    margin-top: 10px;
 }
 
-.contact-list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    max-width: 500px;;
-}
-
-
-.contact-list-item:first-child, .contact-list-item:last-child {
-    border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem;
-}
-
-.contact-list-item {
-    position: relative;
-    display: block;
-    padding: .75rem 1.25rem;
-    margin-bottom: -1px;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-}
 
 .contact-main {
     display: flex;
     align-items: center;
+    gap: 7px;
 }
 
-.contact-list-item-img {
-    border-radius: 50%;
-    margin-right: 1rem;
-}
-
-.contact-list-item-name, .contact-list-item-phone, .contact-list-item-action {
-    margin-right: 1rem;
-}

@@ -1,4 +1,4 @@
-export function isValidInn(value) {
+export default function isValidInn(value) {
   const controlDigit = +value % 10;
   const reversedValue = value.split('').reverse().slice(1);
   const sumOfDigits = reversedValue.reduce((accum, item, index) => {
